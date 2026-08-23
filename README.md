@@ -20,24 +20,24 @@ Raw Network Traffic (NSL-KDD)
         │
         ▼
 ┌───────────────────┐
-│   Preprocessing    │  cleaning, encoding, scaling, feature engineering
-└─────────┬──────────┘
+│   Preprocessing   │  cleaning, encoding, scaling, feature engineering
+└─────────┬─────────┘
           ▼
 ┌───────────────────┐
-│  Detection Engine   │  Random Forest (binary + multiclass) + Isolation Forest
-└─────────┬──────────┘
+│  Detection Engine │  Random Forest (binary + multiclass) + Isolation Forest
+└─────────┬─────────┘
           ▼
 ┌───────────────────┐
-│Correlation Engine   │  groups related events into Incidents + builds timelines
-└─────────┬──────────┘
+│Correlation Engine │  groups related events into Incidents + builds timelines
+└─────────┬─────────┘
           ▼
 ┌───────────────────┐
-│  RCA Report Gen     │  LLM-generated root-cause report, grounded in real data
-└─────────┬──────────┘
+│  RCA Report Gen   │  LLM-generated root-cause report, grounded in real data
+└─────────┬─────────┘
           ▼
-┌───────────────────┐
-│ Streamlit Dashboard │  upload, inspect incidents, read reports, view analytics
-└───────────────────┘
+┌────────────────────┐
+│ Streamlit Dashboard│  upload, inspect incidents, read reports, view analytics
+└────────────────────┘
 ```
 
 ---
